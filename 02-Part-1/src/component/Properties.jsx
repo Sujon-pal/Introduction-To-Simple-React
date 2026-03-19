@@ -1,3 +1,5 @@
+// 🟢 Prop types and how to pass/read a prop
+
 function Properties() {
   return (
     <div>

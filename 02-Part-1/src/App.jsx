@@ -4,6 +4,7 @@ import heroImg from "./assets/hero.png";
 import "./App.css";
 
 import Properties from "./component/Properties";
+import Conditional from "./component/Conditional";
 
 function App() {
   return (
@@ -14,9 +15,12 @@ function App() {
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
-       
       </section>
-      <Properties/>
+      <Properties />
+      {/* Conditional Rendering: If, Ternary and AND OR */}
+      <Conditional name="Sujon" isLoggedIn={true} />
+      <Conditional name="Anika" isLoggedIn={true} />
+      <Conditional name="Shawon" isLoggedIn={false} />
     </>
   );
 }

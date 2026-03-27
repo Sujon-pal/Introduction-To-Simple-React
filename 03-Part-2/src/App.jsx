@@ -3,6 +3,8 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 import HandleEvent from "./Component/HandleEvents";
+import StateChange from "./Component/StateChange"
+
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         </div>
       </section>
       <HandleEvent></HandleEvent>
+      <StateChange></StateChange>
+      
     </>
   );
 }

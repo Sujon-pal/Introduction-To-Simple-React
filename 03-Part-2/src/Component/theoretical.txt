@@ -1,0 +1,15 @@
+🟢 <Suspense fallback={<Loading />}>
+  <SomeComponent />
+</Suspense>
+Suspense হলো React-এর একটি feature যা ব্যবহার করা হয়:
+
+👉 লোডিং অবস্থায় UI control করার জন্য
+
+মানে:
+যখন কোনো data load হচ্ছে (API, lazy component), তখন React temporarily একটা fallback UI দেখায়।
+
+fallback={<Loading />}
+
+👉 এটা হচ্ছে temporary UI
+Component load হওয়ার আগে → <Loading /> দেখাবে
+Component ready হলে → <SomeComponent /> দেখাবে

@@ -5,6 +5,7 @@ function StateChange() {
     border: "2px solid yellow",
     padding: "10px",
     marginBottom: "10px",
+    borderRadius: "10px"
   };
 
   const [count, setCount] = useState(0);
@@ -42,7 +43,7 @@ function StateChange() {
 
       {/* Run counter */}
       <div style={counterStyle}>
-        <h1>Count : {run} </h1>
+        <h1>Run : {run} </h1>
         <p><small>Total Six : {sixs}</small></p>
         {
             run >= 50 && <p>Your Score is 50</p>

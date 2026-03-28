@@ -52,3 +52,9 @@
   box-shadow: 0 4px 15px rgba(170, 59, 255, 0.4);
 }
 
+.card {
+      border: 2px solid yellow;
+    padding : 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}

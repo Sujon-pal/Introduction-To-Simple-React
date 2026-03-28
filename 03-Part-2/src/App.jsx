@@ -4,7 +4,11 @@ import heroImg from "./assets/hero.png";
 import "./App.css";
 import HandleEvent from "./Component/HandleEvents";
 import StateChange from "./Component/StateChange"
+import Users from "./Component/Users";
+import { Suspense } from "react";
 
+const fetchUser =  fetch('https://jsonplaceholder.typicode.com/users')
+.then(res => res.json())
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
       </section>
       <HandleEvent></HandleEvent>
       <StateChange></StateChange>
+
+      <Suspense fallback={<h3>Lodding...</h3>}>
+        <Users fetchUser = {fetchUser}></Users>
+      </Suspense>
       
     </>
   );

@@ -3,12 +3,21 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 import HandleEvent from "./Component/HandleEvents";
-import StateChange from "./Component/StateChange"
+import StateChange from "./Component/StateChange";
 import Users from "./Component/Users";
-import { Suspense } from "react";
 
-const fetchUser =  fetch('https://jsonplaceholder.typicode.com/users')
-.then(res => res.json())
+import { Suspense } from "react";
+import Friend from "./Component/Friend";
+
+const fetchUser = fetch("https://jsonplaceholder.typicode.com/users").then(
+  (res) => res.json(),
+);
+
+const fetchUserName = async () => {
+  let ref = await fetch("https://jsonplaceholder.typicode.com/users");
+  return ref.json();
+};
+  const userData = fetchUserName();
 
 function App() {
   return (
@@ -22,11 +31,13 @@ function App() {
       </section>
       <HandleEvent></HandleEvent>
       <StateChange></StateChange>
-
       <Suspense fallback={<h3>Lodding...</h3>}>
-        <Users fetchUser = {fetchUser}></Users>
+        <Users fetchUser={fetchUser}></Users>
       </Suspense>
-      
+    
+      <Suspense fallback={<h3>Lodding...</h3>}>
+        <Friend userData={userData}></Friend>
+      </Suspense>
     </>
   );
 }

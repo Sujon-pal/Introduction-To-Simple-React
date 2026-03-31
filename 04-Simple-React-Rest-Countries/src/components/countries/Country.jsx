@@ -1,9 +1,20 @@
 import { useState } from "react";
 
-const Country = ({ country }) => {
+const Country = ({ country ,handleVisitedCountries }) => {
   const [isVisited, setVisited] = useState(false);
 
-  
+  const handleVisited = () =>{
+    // if(isVisited === true){
+    //     setVisited(false)
+    // }
+    // else{
+    //     setVisited(true)
+    // }
+
+    // OR 
+    setVisited(!isVisited)
+    handleVisitedCountries(country)
+  }
   return (
     <div className={`card ${isVisited && 'country-visitied'}`}>
       <img
@@ -14,7 +25,7 @@ const Country = ({ country }) => {
 
       <h3 className="name">{country.name.common}</h3>
 
-      <button onClick={() => setVisited(!isVisited)}>
+      <button onClick={handleVisited}>
         {isVisited ? "Visited ✅" : "Not Visited ❌"}
       </button>
     </div>

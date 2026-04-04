@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Aqua Pure Bottle",
+    "brand": "FreshLife",
+    "capacity": "500ml",
+    "price": 50,
+    "color": "Blue",
+    "isHot": false,
+    "isCold": true
+  },
+  {
+    "id": 2,
+    "name": "Cool Sip Bottle",
+    "brand": "HydroMax",
+    "capacity": "1L",
+    "price": 120,
+    "color": "Black",
+    "isHot": false,
+    "isCold": true
+  },
+  {
+    "id": 3,
+    "name": "Eco Water Bottle",
+    "brand": "GreenLife",
+    "capacity": "750ml",
+    "price": 90,
+    "color": "Green",
+    "isHot": false,
+    "isCold": true
+  },
+  {
+    "id": 4,
+    "name": "Steel Pro Bottle",
+    "brand": "DurableX",
+    "capacity": "1L",
+    "price": 250,
+    "color": "Silver",
+    "isHot": true,
+    "isCold": false
+  },
+  {
+    "id": 5,
+    "name": "Mini Travel Bottle",
+    "brand": "QuickSip",
+    "capacity": "300ml",
+    "price": 40,
+    "color": "Red",
+    "isHot": false,
+    "isCold": true
+  },
+  {
+    "id": 6,
+    "name": "Gym Sport Bottle",
+    "brand": "FitLife",
+    "capacity": "1.5L",
+    "price": 180,
+    "color": "Orange",
+    "isHot": false,
+    "isCold": true
+  },
+  {
+    "id": 7,
+    "name": "Kids Cartoon Bottle",
+    "brand": "FunDrink",
+    "capacity": "400ml",
+    "price": 70,
+    "color": "Pink",
+    "isHot": false,
+    "isCold": true
+  },
+  {
+    "id": 8,
+    "name": "Glass Pure Bottle",
+    "brand": "CrystalClear",
+    "capacity": "600ml",
+    "price": 150,
+    "color": "Transparent",
+    "isHot": false,
+    "isCold": true
+  },
+  {
+    "id": 9,
+    "name": "Thermal Bottle",
+    "brand": "HeatKeep",
+    "capacity": "1L",
+    "price": 300,
+    "color": "Grey",
+    "isHot": true,
+    "isCold": true
+  },
+  {
+    "id": 10,
+    "name": "Outdoor Adventure Bottle",
+    "brand": "Explorer",
+    "capacity": "2L",
+    "price": 220,
+    "color": "Army Green",
+    "isHot": true,
+    "isCold": true
+  }
+]

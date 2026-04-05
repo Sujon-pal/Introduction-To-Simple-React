@@ -1,27 +1,19 @@
 import { Suspense } from "react";
 import "./App.css";
-import { mult, sum } from "./utils/math";
 import WaterBottls from "./components/WaterBottls/WaterBottls";
 
+// only once fetch
+const waterBottlesPromise = fetch(
+  "https://jsonplaceholder.typicode.com/photos?_limit=20"
+).then((res) => res.json());
+
 function App() {
-  const add = sum(10, 20);
-  console.log(add);
-
-  const goonfol = mult(2, 2);
-  console.log(goonfol);
-
-  // Fetch waterBottles.json data
-
-  const waterBottlesPromise = fetch("/waterBottles.json").then((res) =>
-    res.json(),
-  );
-
   return (
     <>
-      <h1>Introduction ES6 Modules simple import, export</h1>
+      <h1>Water Bottles Gallery</h1>
 
-      <Suspense fallback={<h2>waterBottles Data Loading ...</h2>}>
-        <WaterBottls waterBottlesPromise={waterBottlesPromise}></WaterBottls>
+      <Suspense fallback={<h2>Loading...</h2>}>
+        <WaterBottls waterBottlesPromise={waterBottlesPromise} />
       </Suspense>
     </>
   );

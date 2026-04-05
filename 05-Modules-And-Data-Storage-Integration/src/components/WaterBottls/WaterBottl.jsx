@@ -1,12 +1,14 @@
-import React from "react";
-
-const WaterBottl = ({ bottole }) => {
+const WaterBottl = ({ bottole,handleAddCart }) => {
   return (
-    <div>
-      <img src={bottole.image} alt="" />
+    <div style={{ border: "1px solid gray", padding: "10px" }}>
+      <img
+        src={bottole?.thumbnailUrl}
+        alt={bottole?.title}
+        style={{ width: "100%" }}
+      />
 
-      <h2>Bottole Name : {bottole.name}</h2>
-       <img src={bottole.image} alt={bottole.name} width={150} />
+      <h4>{bottole?.title}</h4>
+      <button onClick={ () => handleAddCart(bottole)}>Buy Now</button>
     </div>
   );
 };

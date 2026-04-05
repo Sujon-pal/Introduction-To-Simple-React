@@ -12,13 +12,13 @@ function App() {
 
   // Fetch waterBottles.json data
 
-  const waterBottlesPromise = fetch("../waterBottles.json").then((res) =>
+  const waterBottlesPromise = fetch("/waterBottles.json").then((res) =>
     res.json(),
   );
 
   return (
     <>
-      <h1>41-1 Module Introduction ES6 Modules simple import, export</h1>
+      <h1>Introduction ES6 Modules simple import, export</h1>
 
       <Suspense fallback={<h2>waterBottles Data Loading ...</h2>}>
         <WaterBottls waterBottlesPromise={waterBottlesPromise}></WaterBottls>
